@@ -1,0 +1,294 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #f7f9fd;
+  font-family: Open Sans;
+  color: #5d698d;
+  line-height: 1;
+}
+
+.setting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.setting .container {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 23px 37px -13px rgba(16, 47, 165, 0.2);
+          box-shadow: 0 23px 37px -13px rgba(16, 47, 165, 0.2);
+}
+
+.setting-tabs {
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid #dcdff1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.setting-tabs .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.setting-tabs .btn-group .button {
+  width: 126px;
+  background-color: #fff;
+  border: 1px solid #dcdff1;
+  border-bottom: none;
+  color: #5d698d;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+.setting-tabs .btn-group .button:last-child {
+  border-radius: 0 3px 0 0;
+}
+
+.setting-tabs .btn-group .button:first-child {
+  border-radius: 3px 0 0 0;
+}
+
+.setting-tabs .btn-group .button:not(:last-child) {
+  border-right: none;
+}
+
+.setting-tabs .btn-group .button.active {
+  color: #fff;
+  border-color: #869ffd;
+  background-color: #869ffd;
+}
+
+.config {
+  width: 378px;
+  margin-top: 15px;
+}
+
+.config h4 {
+  font-size: 10px;
+}
+
+.config .template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.config .template-img {
+  width: 125px;
+  padding: 10px;
+  margin: 10px 10px 15px 0px;
+  border-radius: 8px;
+  background: #f7f9fd;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.config .template-img img.text-only {
+  margin-top: 7px;
+}
+
+.config .template-img:hover {
+  border: 1.5px solid #869ffd;
+}
+
+.config .template-img.active {
+  border: 1.5px solid #869ffd;
+}
+
+.config form {
+  margin: 5px 0 40px;
+}
+
+.config form .title {
+  margin-bottom: 8px;
+}
+
+.config form .types {
+  margin: 10px 0;
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+
+.config form .types .custom-radio {
+  position: relative;
+  display: inline-block;
+  padding-left: 35px;
+  padding-top: 3px;
+  margin-bottom: 8px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.config form .types .custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.config form .types .custom-radio input[type="radio"]:checked ~ .check::before {
+  background: #869ffd;
+}
+
+.config form .types .custom-radio:hover input ~ .check {
+  background-color: #fafafa;
+}
+
+.config form .types .check {
+  position: absolute;
+  border: 2px solid #dcdff1;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  transition: border 0.25s linear;
+  -webkit-transition: border 0.25s linear;
+}
+
+.config form .types .check:after {
+  content: "";
+  position: absolute;
+  display: none;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
+.config form .types .custom-radio input:checked ~ .check:after {
+  display: block;
+}
+
+.config form .types .custom-radio .check:after {
+  top: 4px;
+  left: 4px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #869ffd;
+}
+
+.config form p {
+  font-style: italic;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+input[type="text"] {
+  width: 340px;
+  height: 44px;
+  font-size: 16px;
+  padding-left: 14px;
+  border: 1px solid #dcdff1;
+  outline: none;
+  border-radius: 4px;
+  color: #5d698d;
+}
+
+input::-webkit-input-placeholder {
+  color: #5d698d;
+}
+
+input:-ms-input-placeholder {
+  color: #5d698d;
+}
+
+input::-ms-input-placeholder {
+  color: #5d698d;
+}
+
+input::placeholder {
+  color: #5d698d;
+}
+
+label.id {
+  margin-right: 10px;
+}
+
+label.delay {
+  display: block;
+  margin: 30px 0 5px;
+}
+
+.select {
+  position: relative;
+}
+
+.select select {
+  width: 110px;
+  height: 44px;
+  font-size: 16px;
+  padding-left: 20px;
+  border: 1px solid #dcdff1;
+  outline: none;
+  border-radius: 4px;
+  color: #5d698d;
+  -webkit-appearance: none;
+}
+
+.select select:focus {
+  outline: none;
+}
+
+.select .styled-select {
+  position: absolute;
+  top: 12px;
+  left: 80px;
+  color: #b9bccd;
+}
+/*# sourceMappingURL=main.css.map */
