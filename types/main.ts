@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
+  templateSelect();
 });
 
 function setupTabs() {
@@ -22,6 +23,18 @@ function setupTabs() {
       });
       button.classList.add("active");
       tabToActivate!.classList.add("active");
+    });
+  });
+}
+
+function templateSelect() {
+  document.querySelectorAll(".template-img").forEach(button => {
+    button.addEventListener("click", () => {
+      const template = button.parentElement;
+      template!.querySelectorAll(".template-img").forEach(button => {
+        button.classList.remove("active");
+      });
+      button.classList.add("active");
     });
   });
 }
