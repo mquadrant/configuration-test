@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <title>Configuration</title>
+  </head>
+  <body>
+    <section class="setting">
+      <div class="container">
+        <header class="setting-tabs">
+          <div class="btn-group">
+            <button class="tab-button button active" data-for-tab="1">Configuration</button>
+            <button class="tab-button button" data-for-tab="2">Content</button>
+            <button class="tab-button button" data-for-tab="3">Position</button>
+          </div>
+        </header>
+        <!-- TAB ONE -->
+        <section class="config tab-content active" data-tab="1">
+          <h4 class="title">TEMPLATES</h4>
+          <div class="template">
+            <div class="template-img active">
+              <img src="./images/text_only.svg" width="100px" alt="text only" class="text-only" />
+              <p>Text only</p>
+            </div>
+            <div class="template-img">
+              <img
+                src="./images/with_button.svg"
+                width="100px"
+                alt="with button"
+                class="with-button"
+              />
+              <p>With button</p>
+            </div>
+          </div>
+          <form>
+            <h4 class="title">TYPE</h4>
+            <div class="types">
+              <label class="custom-radio">
+                Dismissible
+                <input type="radio" name="selector" value="dismissible" checked />
+                <span class="check"></span>
+              </label>
+              <label class="custom-radio">
+                Action Driven
+                <input type="radio" name="selector" value="action" />
+                <span class="check"></span>
+              </label>
+            </div>
+            <p>
+              Please provide the target element’s ID, where your users should click, in order to
+              proceed to the next guide in your flow.
+            </p>
+            <label for="element-id" class="id">ID</label>
+            <input type="text" placeholder="Ex. #add-new" />
+            <br />
+            <label for="display-delay" class="delay">Display Delay</label>
+            <div class="select">
+              <select name="delay" id="delay" class="select-delay">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+              </select>
+              <div class="styled-select">ms</div>
+            </div>
+          </form>
+        </section>
+        <!-- TAB TWO -->
+        <section class="config tab-content" data-tab="2">
+          <h4 class="title">TEMPLATES</h4>
+          <div class="template">
+            <div class="template-img active">
+              <img src="./images/text_only.svg" width="100px" alt="text only" class="text-only" />
+              <p>Text only</p>
+            </div>
+            <div class="template-img">
+              <img
+                src="./images/with_button.svg"
+                width="100px"
+                alt="with button"
+                class="with-button"
+              />
+              <p>With button</p>
+            </div>
+          </div>
+          <form>
+            <h4 class="title">TYPE</h4>
+            <div class="types">
+              <label class="custom-radio">
+                Dismissible
+                <input type="radio" name="selector" value="dismissible" checked />
+                <span class="check"></span>
+              </label>
+              <label class="custom-radio">
+                Action Driven
+                <input type="radio" name="selector" value="action" />
+                <span class="check"></span>
+              </label>
+            </div>
+            <p>
+              Please provide the target element’s ID, where your users should click, in order to
+              proceed to the next guide in your flow.
+            </p>
+            <label for="element-id" class="id">ID</label>
+            <input type="text" placeholder="Ex. #add-new" />
+            <br />
+            <label for="display-delay" class="delay">Display Delay</label>
+            <div class="select">
+              <select name="delay" id="delay" class="select-delay">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+              </select>
+              <div class="styled-select">ms</div>
+            </div>
+          </form>
+        </section>
+        <!-- TAB THREE -->
+        <section class="config tab-content" data-tab="3">
+          <h4 class="title">TEMPLATES</h4>
+          <div class="template">
+            <div class="template-img active">
+              <img src="./images/text_only.svg" width="100px" alt="text only" class="text-only" />
+              <p>Text only</p>
+            </div>
+            <div class="template-img">
+              <img
+                src="./images/with_button.svg"
+                width="100px"
+                alt="with button"
+                class="with-button"
+              />
+              <p>With button</p>
+            </div>
+          </div>
+          <form>
+            <h4 class="title">TYPE</h4>
+            <div class="types">
+              <label class="custom-radio">
+                Dismissible
+                <input type="radio" name="selector" value="dismissible" checked />
+                <span class="check"></span>
+              </label>
+              <label class="custom-radio">
+                Action Driven
+                <input type="radio" name="selector" value="action" />
+                <span class="check"></span>
+              </label>
+            </div>
+            <p>
+              Please provide the target element’s ID, where your users should click, in order to
+              proceed to the next guide in your flow.
+            </p>
+            <label for="element-id" class="id">ID</label>
+            <input type="text" placeholder="Ex. #add-new" />
+            <br />
+            <label for="display-delay" class="delay">Display Delay</label>
+            <div class="select">
+              <select name="delay" id="delay" class="select-delay">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+              </select>
+              <div class="styled-select">ms</div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
